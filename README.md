@@ -8,10 +8,9 @@ Personal maintained LEMP server based on debian
 /data
     /config
         /nginx
-            /conf.d
+            /conf.d     #some extra config files
             /certs
             /vhost.d    #some vitrul host config file
     /log
-        /nginx
     /www                #web root
 </code></pre>
