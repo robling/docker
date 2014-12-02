@@ -12,7 +12,7 @@ echo deb http://dl.hhvm.com/debian wheezy main | tee /etc/apt/sources.list.d/hhv
 
 RUN \
 apt-get update && \
-apt-get install -y apt-utils procps supervisor&& \
+apt-get install -y apt-utils procps supervisor vim.tiny && \
 apt-get install -y nginx hhvm
 
 RUN \
