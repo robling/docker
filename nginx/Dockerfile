@@ -16,11 +16,10 @@ apt-get install -y apt-utils procps supervisor vim.tiny && \
 apt-get install -y nginx hhvm
 
 RUN \
-cp /tmp/config/nginx.conf /etc/nginx/nginx.conf && \
-cp /tmp/config/hhvm.server.ini /etc/hhvm/server.ini && \
-cp /tmp/config/hhvm.conf /etc/hhvm/hhvm.conf
-cp /tmp/config/supervisord.*.conf /etc/supervisor/conf.d/ && \
-cp /tmp/script/enter.sh /etc/enter.sh
+cp /tmp/nginx.conf /etc/nginx/nginx.conf && \
+cp /tmp/hhvm.server.ini /etc/hhvm/server.ini && \
+cp /tmp/supervisord.*.conf /etc/supervisor/conf.d/ && \
+cp /tmp/enter.sh /etc/enter.sh
 
 EXPOSE 80 443
 VOLUME ["/data"]

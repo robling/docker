@@ -19,13 +19,12 @@ server {
 	# pass the PHP scripts to FastCGI server listening on unix file socket
 	
 	location ~ \.php$ {
-		fastcgi_split_path_info ^(.+\.php)(/.+)$;
-		# NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
-	
-		# With php5-cgi alone:
-		fastcgi_pass 127.0.0.1:9000;
-		# With php5-fpm:
-		fastcgi_pass unix:/var/run/hhvm/hhvm.sock;
-		fastcgi_index index.php;
-		include fastcgi_params;
+        root /data/www/default;
+        #use a TCP socket
+        #fastcgi_pass   127.0.0.1:9000;
+        #used a unix socket 
+        fastcgi_pass   unix:/var/run/hhvm/hhvm.sock;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include        fastcgi_params;
 	}

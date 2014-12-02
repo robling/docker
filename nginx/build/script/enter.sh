@@ -1,2 +1,2 @@
 #run supervisor in foreground
-/etc/init.d/supervisor -n
+/etc/init.d/supervisor -n start
