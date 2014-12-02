@@ -24,4 +24,4 @@ chmod 755 /etc/enter.sh
 
 EXPOSE 80 443
 VOLUME ["/data"]
-CMD ["supervisord -n"]
+CMD ["/etc/enter.sh"]
