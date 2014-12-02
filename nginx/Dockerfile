@@ -16,7 +16,10 @@ apt-get install -y apt-utils procps supervisor vim.tiny && \
 apt-get install -y nginx hhvm
 
 RUN \
-cp /tmp/config/supervisord.conf /etc/supervisord.conf && \
+cp /tmp/config/nginx.conf /etc/nginx/nginx.conf && \
+cp /tmp/config/hhvm.server.ini /etc/hhvm/server.ini && \
+cp /tmp/config/hhvm.conf /etc/hhvm/hhvm.conf
+cp /tmp/config/supervisord.conf /etc/supervisor/supervisord.conf && \
 cp /tmp/script/enter.sh /etc/enter.sh
 
 EXPOSE 80 443
