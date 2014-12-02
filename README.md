@@ -12,5 +12,5 @@ Personal maintained LEMP server based on debian
             /certs
             /vhost.d    #some vitrul host config file
     /log
-    /www                #web root
+    /www                #web root path
 </code></pre>

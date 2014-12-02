@@ -19,7 +19,8 @@ RUN \
 cp /tmp/nginx.conf /etc/nginx/nginx.conf && \
 cp /tmp/hhvm.server.ini /etc/hhvm/server.ini && \
 cp /tmp/supervisord.*.conf /etc/supervisor/conf.d/ && \
-cp /tmp/enter.sh /etc/enter.sh
+cp /tmp/enter.sh /etc/enter.sh && \
+chmod 755 /etc/enter.sh
 
 EXPOSE 80 443
 VOLUME ["/data"]
