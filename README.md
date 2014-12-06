@@ -15,4 +15,4 @@ Personal maintained LEMP server based on debian
     /www                #web root path
 </code></pre>
 
-A sample has been listed in the git
+A sample has been listed in the [git repository](https://github.com/robling/docker)
