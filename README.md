@@ -2,7 +2,7 @@
 Personal maintained LEMP server based on debian
 
 ***
-####You need to volume a dictionary with the forrowing tree
+####You need to volume a dictionary with the following structure
 
 <pre><code>
 /data
